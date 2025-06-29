@@ -310,41 +310,56 @@ export default function TrustedCirclePage() {
                   </div>
                 </div>
 
-                <div className="flex gap-2 mt-4 pt-4 border-t border-purple-100">
-                  <Button size="sm" variant="outline" className="border-green-200 text-green-600 bg-transparent">
-                    <Phone className="h-4 w-4 mr-1" />
-                    Call
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-blue-200 text-blue-600 bg-transparent">
-                    <MessageSquare className="h-4 w-4 mr-1" />
-                    Message
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-purple-200 text-purple-600 bg-transparent">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    Share Location
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className={
-                      contact.isEmergencyContact ? "border-red-200 text-red-600" : "border-orange-200 text-orange-600"
-                    }
-                    onClick={() => toggleEmergencyContact(contact.id)}
-                  >
-                    <Shield className="h-4 w-4 mr-1" />
-                    {contact.isEmergencyContact ? "Remove Emergency" : "Make Emergency"}
-                  </Button>
-                  {contact.id !== 3 && ( // Don't allow deleting emergency services
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-red-200 text-red-600 bg-transparent"
-                      onClick={() => removeContact(contact.id)}
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </Button>
-                  )}
-                </div>
+ <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-purple-100">
+      <Button
+        size="sm"
+        variant="outline"
+        className="border-green-200 text-green-600 bg-transparent min-w-[120px]"
+      >
+        <Phone className="h-4 w-4 mr-1" />
+        Call
+      </Button>
+      <Button
+        size="sm"
+        variant="outline"
+        className="border-blue-200 text-blue-600 bg-transparent min-w-[120px]"
+      >
+        <MessageSquare className="h-4 w-4 mr-1" />
+        Message
+      </Button>
+      <Button
+        size="sm"
+        variant="outline"
+        className="border-purple-200 text-purple-600 bg-transparent min-w-[120px]"
+      >
+        <MapPin className="h-4 w-4 mr-1" />
+        Share Location
+      </Button>
+      <Button
+        size="sm"
+        variant="outline"
+        className={
+          contact.isEmergencyContact
+            ? "border-red-200 text-red-600 min-w-[120px]"
+            : "border-orange-200 text-orange-600 min-w-[120px]"
+        }
+        onClick={() => toggleEmergencyContact(contact.id)}
+      >
+        <Shield className="h-4 w-4 mr-1" />
+        {contact.isEmergencyContact ? "Remove Emergency" : "Make Emergency"}
+      </Button>
+      {contact.id !== 3 && (
+        <Button
+          size="sm"
+          variant="outline"
+          className="border-red-200 text-red-600 bg-transparent min-w-[120px]"
+          onClick={() => removeContact(contact.id)}
+        >
+          <Trash2 className="h-4 w-4 mr-1" />
+          Delete
+        </Button>
+      )}
+    </div>
               </CardContent>
             </Card>
           ))}
