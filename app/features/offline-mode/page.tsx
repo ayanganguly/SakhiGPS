@@ -64,7 +64,8 @@ export default function OfflineModePage() {
     { name: "Local Police", number: "+1 (555) 555-0199", type: "police" },
   ]
 
-  const handleDownloadRoute = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleDownloadRoute = (id?: number) => {
     setIsDownloading(true)
     setDownloadProgress(0)
 
