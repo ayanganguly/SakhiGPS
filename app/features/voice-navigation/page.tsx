@@ -152,7 +152,7 @@ export default function VoiceNavigationPage() {
                 {currentCommand && (
                   <div className="p-3 bg-green-50 rounded-lg border border-green-200">
                     <p className="text-sm text-green-700 font-medium">Last Command:</p>
-                    <p className="text-sm text-slate-600">"{currentCommand}"</p>
+                    <p className="text-sm text-slate-600">&quot;{currentCommand}&quot;</p>
                   </div>
                 )}
 
@@ -313,7 +313,7 @@ export default function VoiceNavigationPage() {
                 <div className="grid md:grid-cols-2 gap-3">
                   {voiceCommands.map((command, index) => (
                     <div key={index} className="p-3 bg-green-50 rounded-lg border border-green-200">
-                      <code className="text-sm text-green-700 font-medium">"{command}"</code>
+                      <code className="text-sm text-green-700 font-medium">&quot;{command}&quot;</code>
                     </div>
                   ))}
                 </div>
@@ -340,14 +340,14 @@ export default function VoiceNavigationPage() {
                   <div className="p-4 bg-white rounded-lg border border-red-200">
                     <h4 className="font-medium text-slate-700 mb-2">Quick SOS</h4>
                     <p className="text-sm text-slate-600 mb-2">
-                      Say "Emergency SOS" to instantly alert your trusted circle
+                      Say &quot;Emergency SOS&quot; to instantly alert your trusted circle
                     </p>
-                    <code className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">"Emergency SOS"</code>
+                    <code className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">&quot;Emergency SOS&quot;</code>
                   </div>
                   <div className="p-4 bg-white rounded-lg border border-red-200">
                     <h4 className="font-medium text-slate-700 mb-2">Silent Alert</h4>
-                    <p className="text-sm text-slate-600 mb-2">Whisper "Help me" to send a silent distress signal</p>
-                    <code className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">"Help me"</code>
+                    <p className="text-sm text-slate-600 mb-2">Whisper &quot;Help me&quot; to send a silent distress signal</p>
+                    <code className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">&quot;Help me&quot;</code>
                   </div>
                 </div>
               </CardContent>

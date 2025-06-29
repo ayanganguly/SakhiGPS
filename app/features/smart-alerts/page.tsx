@@ -337,7 +337,7 @@ export default function SmartAlertsPage() {
               <div className="p-4 bg-white rounded-lg border border-red-200">
                 <h4 className="font-medium text-slate-700 mb-2">Automatic Rerouting</h4>
                 <p className="text-sm text-slate-600">
-                  When high-priority alerts are detected, we'll automatically suggest safer alternative routes.
+                  When high-priority alerts are detected, we&apos;ll automatically suggest safer alternative routes.
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg border border-red-200">

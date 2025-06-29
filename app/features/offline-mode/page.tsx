@@ -25,7 +25,7 @@ export default function OfflineModePage() {
   const [isOfflineMode, setIsOfflineMode] = useState(false)
   const [downloadProgress, setDownloadProgress] = useState(0)
   const [isDownloading, setIsDownloading] = useState(false)
-  const [storageUsed, setStorageUsed] = useState(45)
+  const [storageUsed] = useState(45)
 
   const offlineRoutes = [
     {
@@ -64,7 +64,7 @@ export default function OfflineModePage() {
     { name: "Local Police", number: "+1 (555) 555-0199", type: "police" },
   ]
 
-  const handleDownloadRoute = (routeId: number) => {
+  const handleDownloadRoute = () => {
     setIsDownloading(true)
     setDownloadProgress(0)
 
@@ -85,7 +85,7 @@ export default function OfflineModePage() {
     setIsOfflineMode(!isOfflineMode)
   }
 
-  const sendSMSAlert = (contact: any) => {
+  const sendSMSAlert = (contact: { name: string; number: string; type: string }) => {
     // Simulate SMS sending
     alert(`SMS alert sent to ${contact.name} (${contact.number})`)
   }

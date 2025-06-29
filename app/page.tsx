@@ -33,7 +33,7 @@ export default function HomePage() {
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold text-slate-700 mb-6">
-            Safety Shouldn't <span className="text-blue-400">be Optional</span>
+            Safety Shouldn&apos;t <span className="text-blue-400">be Optional</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
             Navigate urban spaces with confidence using AI-powered route planning, real-time safety alerts, and your

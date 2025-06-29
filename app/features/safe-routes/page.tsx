@@ -183,7 +183,7 @@ export default function SafeRoutesPage() {
             ) : (
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-bold text-slate-700">Route Options to "{destination}"</h2>
+                  <h2 className="text-xl font-bold text-slate-700">Route Options to &quot;{destination}&quot;</h2>
                   <Badge className="bg-blue-100 text-blue-700">{mockRoutes.length} routes found</Badge>
                 </div>
 

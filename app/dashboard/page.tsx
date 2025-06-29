@@ -26,7 +26,7 @@ import Image from 'next/image';
 
 export default function DashboardPage() {
   const [currentTime, setCurrentTime] = useState(new Date())
-  const [safetyScore, setSafetyScore] = useState(85)
+  const [safetyScore] = useState(85)
   const [isVoiceMode, setIsVoiceMode] = useState(false)
   const [isOfflineMode, setIsOfflineMode] = useState(false)
 

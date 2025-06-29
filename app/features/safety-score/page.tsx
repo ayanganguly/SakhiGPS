@@ -21,8 +21,8 @@ import {
 } from "lucide-react"
 
 export default function SafetyScorePage() {
-  const [currentScore, setCurrentScore] = useState(85)
-  const [selectedTimeframe, setSelectedTimeframe] = useState("current")
+  const [currentScore] = useState(85)
+  const [] = useState("current")
 
   const safetyMetrics = {
     lighting: { score: 92, trend: "up", description: "Excellent street lighting coverage" },
@@ -135,7 +135,7 @@ export default function SafetyScorePage() {
                   </div>
                   <p className="text-slate-600">
                     This area has excellent lighting, high foot traffic, and low incident reports. 
-                    It's considered very safe for walking, especially during current hours.
+                    It&apos;s considered very safe for walking, especially during current hours.
                   </p>
                 </div>
               </div>
